@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual envs
+venv/
+
+# Test Audio files
+*.aax
+*.m4b
+*.mp4
