@@ -1,6 +1,6 @@
 import subprocess
-import os
 import sys
+import os
 
 
 def _path_to_ffmpeg() -> str:

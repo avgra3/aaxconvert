@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 
 # Python virtual envs
-venv/
+*venv/
 
-# Test Audio files
+# Test Audio file extensions
 *.aax
 *.m4b
 *.mp4

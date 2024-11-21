@@ -1,0 +1,30 @@
+[project]
+name = "aaxConvert"
+version = "0.1.0"
+description = "A tool to convert .aax file formats to mp4 and m4b audio formats"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE.txt"}
+authors = {name="Antony G."}
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+	"Click",
+]
+
+[project.scripts]
+aaxconvert = "aaxconvert:convert"
+
+[project.gui-scripts]
+aaxconvert = "aaxconvert:convert"
+
+[project.urls]
+Homepage = "https://github.com/avgra3/aaxconvert"
+Issues = "https://github.com/avgra3/aaxconvert/issues"
+
+[build-system]
+requires = ["setuptools>61.0"]
+build-backend = "setuptools.build_meta"
