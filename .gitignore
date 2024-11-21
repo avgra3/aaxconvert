@@ -10,3 +10,6 @@ __pycache__/
 *.aax
 *.m4b
 *.mp4
+
+# Remove temp build files
+*.egg-info
