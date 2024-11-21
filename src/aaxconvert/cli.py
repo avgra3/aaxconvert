@@ -6,7 +6,12 @@ import sys
 ACTIVATION_BYTES = os.getenv("ACTIVATION_BYTES")
 
 
-@click.command()
+@click.group()
+def main():
+    pass
+
+
+@main.command()
 @click.argument("input", type=str)
 @click.option(
     "--activation-bytes",
@@ -15,7 +20,6 @@ ACTIVATION_BYTES = os.getenv("ACTIVATION_BYTES")
     default=ACTIVATION_BYTES,
 )
 def convert(input: str, activation_bytes: str):
-    print(f"ACTIVATION_BYTES={ACTIVATION_BYTES}")
     if not activation_bytes:
         sys.exit(
             f"""ERROR: Activation bytes is not located as an environment variable and not provided as an input.
@@ -30,5 +34,5 @@ def convert(input: str, activation_bytes: str):
         click.echo(result)
 
 
-# if __name__ == "__main__":
-#    convert()
+if __name__ == "__main__":
+    main()

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A tool to convert .aax file formats to mp4 and m4b audio formats"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = {file = "LICENSE.txt"}
-authors = {name="Antony G."}
+authors = [{name="Antony G."}]
 classifiers = [
 	"Programming Language :: Python :: 3",
 	"License :: OSI Approved :: MIT License",
