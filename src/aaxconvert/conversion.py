@@ -6,7 +6,7 @@ import os
 def _path_to_ffmpeg() -> str:
     try:
         path = subprocess.check_output(["which", "ffmpeg"], text=True)
-        return path
+        return path.strip()
     except subprocess.CalledProcessError as e:
         sys.exit(f"ERROR: Command failed with return code {e.returncode}")
 
